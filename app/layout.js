@@ -14,6 +14,7 @@ export const metadata = {
 // 동아리 모음집 - 동아리
 export default async function RootLayout({ children }) {
   const session = await getServerSession(authOptions);
+  console.log(session)
   return (
     <html>
       <body>
@@ -42,7 +43,14 @@ function Navber({session}){
         : ""
       }
       <div className='user'>
-        {session ? <LogoutCom/> : <LoginCom/>}
+        {
+          session ? <LogoutCom/> : <LoginCom/>
+        }
+        {
+          session ? <Link href={'/my'}>
+                      <img width="30px" src={session.user.image}/>
+                    </Link> : ""
+        }
       </div>
     </nav>
   );

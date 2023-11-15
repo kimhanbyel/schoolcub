@@ -5,6 +5,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-family: 'GmarketSansMedium';
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +45,7 @@ nav .home a {
   font-size: xx-large;
   font-weight: 800;
 
-  text-shadow: 0 0px 2px #ffffff,0 0px 2px #ffffff,0 0px 2px #ffffff,0 0px 2px #ffffff,0 0px 2px #ffffff,0 0px 2px #ffffff,0 0px 2px #ffffff,0 0px 2px #ffffff,0 0px 2px #ffffff,0 0px 2px #ffffff,0 0px 2px #ffffff,0 0px 2px #ffffff,0 0px 2px #ffffff;
+  text-shadow: 0 0px 3px #ffffff,0 0px 3px #ffffff,0 0px 3px #ffffff,0 0px 3px #ffffff,0 0px 3px #ffffff,0 0px 3px #ffffff,0 0px 3px #ffffff,0 0px 3px #ffffff,0 0px 3px #ffffff,0 0px 3px #ffffff,0 0px 3px #ffffff,0 0px 3px #ffffff,0 0px 3px #ffffff;
   color: black;
 }
 
@@ -55,4 +66,37 @@ nav .user button {
   border: 0px;
   width: 70px;
   height: 30px;
+}
+
+.main {
+  background: #fff6d7;
+  border-left: 5px solid #d1a71c;
+  border-right: 5px solid #d1a71c;
+  padding-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 900px;
+  text-align: center;
+  text-shadow: 0 10px goldenrod,
+}
+
+.main .title h2 {
+  font-size: 90px;
+  text-shadow: 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white;
+}
+
+.main .title h6 {
+  font-size: 30px;
+  text-shadow: 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white;
+}
+
+.main .content p {
+  margin-top: 20px;
+}
+
+.user {
+  text-align: center;
+  align-items: center;
+  
+  justify-content: center;
 }
