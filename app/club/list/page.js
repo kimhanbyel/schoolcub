@@ -1,9 +1,8 @@
 import client from "@/util/database"
 
-
 export default async function Home() {
   const db = await client.db('schoolclub');
-  const client = await db.
+  const list = await db.collection('club').find().toArray();
   return (
     <div className="main">
       <div className="title">
@@ -15,6 +14,9 @@ export default async function Home() {
           많고 많은 동아리중에 알파고가
           동아리 홈페이지를 제작하였습니다!
         </p>
+        {
+          console.log(list)
+        }
       </div>
     </div>
   )
